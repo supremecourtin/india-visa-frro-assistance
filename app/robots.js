@@ -1,0 +1,1 @@
+export default function robots(){return {rules:{userAgent:'*',allow:'/'},sitemap:'https://visa.vircyber.in/sitemap.xml'}}
