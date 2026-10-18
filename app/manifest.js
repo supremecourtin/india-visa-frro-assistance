@@ -1,1 +1,0 @@
-import {office} from './office';export default function manifest(){return {name:'India Visa & FRRO Legal Assistance',short_name:'Visa FRRO Legal',start_url:'/en',display:'standalone',background_color:'#091a27',theme_color:'#102b3b'}}
