@@ -1,0 +1,1 @@
+export const office={name:'Advocate Bishwa Kumar Jain',address:'Office No. 352A, Vardhman Premium Mall, Pitampura, Delhi 110034, India',street:'352A, Vardhman Premium Mall',locality:'Pitampura',region:'Delhi',postalCode:'110034',country:'IN',phone:'+919582584584',displayPhone:'+91 9582584584',url:'https://visa.vircyber.in'};

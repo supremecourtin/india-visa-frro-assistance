@@ -1,1 +1,0 @@
-Premium India Visa & FRRO legal information website. Primary domain https://visa.vircyber.in. Six locale pages, 8 service topics, 36 long-form FAQ answers, sitemap, WhatsApp +91 9582584584. Separate Vercel project only. No affiliation with Indian immigration authorities. Review translations and Bar Council professional conduct before promotion.
