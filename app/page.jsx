@@ -6,7 +6,7 @@ export default function VisaLegalPortal() {
   const [activeLang, setActiveLang] = useState('en');
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowPopup(true), 3000);
+    const timer = setTimeout(() => setShowPopup(true), 2000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -21,8 +21,7 @@ export default function VisaLegalPortal() {
         { num: "100%", label: "Confidential & Legal" },
         { num: "24/7", label: "Emergency Response" },
         { num: "Delhi-Based", label: "Direct High Court & FRRO Access" }
-      ],
-      servicesTitle: "Specialized Immigration & FRRO Legal Services",
+      ]
     },
     zh: {
       badge: "特许法律代理 • 印度最高法院与德里高等法院",
@@ -34,8 +33,7 @@ export default function VisaLegalPortal() {
         { num: "100%", label: "完全保密与合法" },
         { num: "24/7", label: "紧急响应" },
         { num: "立足德里", label: "直接对接高等法院与FRRO" }
-      ],
-      servicesTitle: "专业移民与FRRO法律服务",
+      ]
     },
     ru: {
       badge: "Официальное юридическое представительство • Верховный суд Дели",
@@ -47,8 +45,7 @@ export default function VisaLegalPortal() {
         { num: "100%", label: "Конфиденциально" },
         { num: "24/7", label: "Экстренная помощь" },
         { num: "Дели", label: "Прямой доступ в суды и FRRO" }
-      ],
-      servicesTitle: "Специализированные иммиграционные услуги",
+      ]
     }
   };
 
@@ -70,7 +67,7 @@ export default function VisaLegalPortal() {
               <button onClick={() => setActiveLang('zh')} className={`px-2.5 py-1 rounded ${activeLang === 'zh' ? 'bg-amber-500 text-slate-950' : 'text-slate-300'}`}>中文</button>
               <button onClick={() => setActiveLang('ru')} className={`px-2.5 py-1 rounded ${activeLang === 'ru' ? 'bg-amber-500 text-slate-950' : 'text-slate-300'}`}>Русский</button>
             </div>
-            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="hidden sm:inline-flex items-center bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-1.5 rounded-lg text-sm font-medium transition shadow-lg shadow-emerald-900/20">
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="hidden sm:inline-flex items-center bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-1.5 rounded-lg text-sm font-medium transition shadow-lg">
               WhatsApp Urgent
             </a>
           </div>
@@ -108,12 +105,12 @@ export default function VisaLegalPortal() {
       </section>
 
       {/* FAQ Section for AI Search Optimization */}
-      <section className="py-20 max-w-4xl mx-auto px-4">
+      <section className="py-20 max-w-4xl mx-auto px-4 border-t border-slate-900">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white mb-4">Frequently Asked Legal Questions</h2>
           <p className="text-slate-400">Direct answers regarding Indian immigration laws for foreign nationals.</p>
         </div>
-        <div className="space-y-6">
+        <div className="space-y-6 text-left">
           <div className="bg-slate-900 p-6 rounded-xl border border-slate-800">
             <h3 className="text-lg font-semibold text-amber-400 mb-2">What happens if a foreign national overstays their visa in India?</h3>
             <p className="text-slate-300 text-sm leading-relaxed">
@@ -121,9 +118,9 @@ export default function VisaLegalPortal() {
             </p>
           </div>
           <div className="bg-slate-900 p-6 rounded-xl border border-slate-800">
-            <h3 className="text-lg font-semibold text-amber-400 mb-2">Can Chinese or Russian nationals get legal representation at FRRO in Delhi?</h3>
+            <h3 className="text-lg font-semibold text-amber-400 mb-2">Can Chinese, Russian, or Ukrainian nationals get legal representation at FRRO in Delhi?</h3>
             <p className="text-slate-300 text-sm leading-relaxed">
-              Yes. Foreign nationals have the legal right to advocate representation before state FRROs, the MHA, and judicial forums.
+              Yes. Foreign nationals have the absolute legal right to advocate representation before state FRROs, the Ministry of Home Affairs (MHA), and judicial forums.
             </p>
           </div>
         </div>
@@ -139,7 +136,7 @@ export default function VisaLegalPortal() {
               <h3 className="text-2xl font-bold text-white mt-3">First Legal Consultation is Free</h3>
               <p className="text-slate-400 text-sm mt-2">Facing visa rejection, overstay, or FRRO trouble? Get expert advice immediately.</p>
             </div>
-            <form onSubmit={(e) => { e.preventDefault(); alert('Consultation request submitted successfully!'); setShowPopup(false); }} className="space-y-4">
+            <form onSubmit={(e) => { e.preventDefault(); alert('Consultation request submitted successfully!'); setShowPopup(false); }} className="space-y-4 text-left">
               <div>
                 <label className="block text-xs font-medium text-slate-300 mb-1">Your Full Name / 姓名 / Имя</label>
                 <input type="text" required placeholder="John Doe" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500" />
